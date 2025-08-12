@@ -3,3 +3,102 @@
 body{
     background-color: hsl(30, 38%, 92%);
 }
+
+.container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;    /* Vertical centering */
+  min-height: 100vh;      /* Full viewport height */
+}
+
+.card{
+    border-radius: 10px; /* (Opcional) Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* (Opcional) Sombra para mejor estética */
+    flex: content;
+    width: 100%;
+    max-width: 350px; /* Maximum width on large screens */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: hsl(0, 0%, 100%);
+}
+
+img{
+    width: 100%;
+}
+
+.information-container{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 3%;
+}
+
+.product-type-text{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.description-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.price-container{ 
+    display: flex;
+    justify-content: space-between; /* Pushes text to opposite ends */
+    align-items: center; /* Vertically centers text */
+    width: 70%; /* Adjust as needed */
+}
+
+.discount-price {
+  text-align: right;
+}
+
+.discount-price{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+}
+
+.original-price{
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+ 
+button{
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 90px; /* Vertical | Horizontal */
+    font-size: 14px; /* Adjust text size */
+    transition: all 0.3s;
+}
+
+button:hover, 
+button:active { /* Efecto aplicado tanto en hover como en clic */
+    background-color: hsl(158, 42%, 18%);
+    transform: scale(1.05);
+}
+
+.little-cart-img{
+    width: 20px;               /* Controla el tamaño del SVG */
+    height: 20px;
+    vertical-align: middle;
+}
