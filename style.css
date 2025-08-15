@@ -12,15 +12,14 @@ body{
 }
 
 .card{
-    border-radius: 10px; /* (Opcional) Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* (Opcional) Sombra para mejor estética */
-    flex: content;
-    width: 100%;
-    max-width: 350px; /* Maximum width on large screens */
+    background: hsl(0, 0%, 100%);
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: content;
+    max-width: 350px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: hsl(0, 0%, 100%);
+    width: 100%;
 }
 
 img{
@@ -63,14 +62,11 @@ h1{
 }
 
 .discount-price {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 1.875rem;
+  font-weight: 700;
   text-align: right;
-}
-
-.discount-price{
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: hsl(158, 36%, 37%);
 }
 
 .original-price{
@@ -108,9 +104,9 @@ button:active { /* Efecto aplicado tanto en hover como en clic */
     vertical-align: middle;
 }
 
-@media (min-width: 720px){
-    h1{
-        font-size: 32px;
+@media (min-width: 45em) {  
+    h1 {
+        font-size: 2rem; 
     }
     .card-content{
         grid-template-columns: 300px 1fr;
@@ -133,4 +129,11 @@ button:active { /* Efecto aplicado tanto en hover como en clic */
         width: 100%; 
     }
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+    transform: none !important;
+  }
 }
