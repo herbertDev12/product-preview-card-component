@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile Screenshot](./screenshots/mobile.png) | ![Desktop Screenshot](./screenshots/desktop.png)
----|---
+| ![Mobile Screenshot](/images/Captura%20desde%202025-08-15%2001-35-41.png) | ![Desktop Screenshot](/images/Captura%20desde%202025-08-15%2001-35-24.png) |
+| ------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 
 ### Links
 
