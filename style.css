@@ -51,6 +51,7 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
+    line-height: 1.5;
     color: hsl(228, 12%, 48%);
 }
 
@@ -97,8 +98,39 @@ button:active { /* Efecto aplicado tanto en hover como en clic */
     transform: scale(1.05);
 }
 
+.card-content{
+    display: grid;
+}
+
 .little-cart-img{
     width: 20px;               /* Controla el tamaño del SVG */
     height: 20px;
     vertical-align: middle;
+}
+
+@media (min-width: 720px){
+    h1{
+        font-size: 32px;
+    }
+    .card-content{
+        grid-template-columns: 300px 1fr;
+    }
+    .card{
+        max-width: 600px;
+    }
+    .card-img{
+        height: 100%;
+    }
+    .price-container{
+        width: 80%;
+    }
+    button{
+        padding: 15px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; /* Espacio entre icono y texto */
+        width: 100%; 
+    }
+
 }

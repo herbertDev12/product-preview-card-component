@@ -20,11 +20,24 @@
       <div class="card">
         <div class="card-content">
           <div class="image-container">
-            <img
-              src="/images/image-product-mobile.jpg"
-              alt="Card image"
-              class="card-img"
-            />
+            <picture>
+              <!-- Versión desktop (600px o más) -->
+              <source
+                srcset="/images/image-product-desktop.jpg"
+                media="(min-width: 720px)"
+              />
+              <source
+                srcset="/images/image-product-mobile.jpg"
+                media="(max-width: 619px)"
+              />
+
+              <!-- Imagen de respaldo (obligatoria) -->
+              <img
+                src="/images/image-product-mobile.jpg"
+                alt="Card image"
+                class="card-img"
+              />
+            </picture>
           </div>
           <div class="information-container">
             <p class="product-type-text">P E R F U M E</p>
@@ -50,13 +63,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">herbertDev12</a>.
     </div>
   </body>
 </html>
